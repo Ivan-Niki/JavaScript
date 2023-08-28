@@ -84,4 +84,21 @@ function confirmEnding(str, target) {
 
 confirmEnding("Bastian", "n");
 
+//7. Repeat a String Repeat a String
+//Repeat a given string str (first argument) for num times (second argument). Return an empty string if num is not a //positive number. For the purpose of this challenge, do not use the built-in .repeat() method.
+
+function repeatStringNumTimes(str, num) {
+  let resultStr = "";
+  if (num <= 0) {
+    return resultStr;
+  } else {
+    for (let i=0; i < num; i++) {
+      resultStr = resultStr + str;
+    }
+    return resultStr;
+  }
+}
+
+repeatStringNumTimes("abc", 3);
+
 
