@@ -132,5 +132,53 @@ function findElement(arr, func) {
   
 findElement([1, 2, 3, 4], num => num % 2 === 0);
 
+//10. Boo who
+//Check if a value is classified as a boolean primitive. Return true or false.
+//Boolean primitives are true and false.
+
+function booWho(bool) {
+  if (bool === true || bool === false) {
+    return true;
+  }
+  return false;
+}
+
+booWho(null);
+
+
+//11. Title Case a Sentence
+//Return the provided string with the first letter of each word capitalized. Make sure the rest of the word is in //lower case.
+//For the purpose of this exercise, you should also capitalize connecting words like the and of.
+
+function titleCase(str) {
+  let words = str.toLowerCase().split(' ');
+  for (let i = 0; i < words.length; i++) {
+    words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+  }
+return words.join(' ');
+}
+
+titleCase("I'm a little tea pot");
+
+//12.Slice and Splice
+// You are given two arrays and an index.
+// Copy each element of the first array into the second array, in order.
+// Begin inserting elements at index n of the second array.
+// Return the resulting array. The input arrays should remain the same after the function runs.
+// frankenSplice([1, 2, 3], [4, 5], 1) should return [4, 1, 2, 3, 5]
+// frankenSplice([1, 2], ["a", "b"], 1) should return ["a", 1, 2, "b"]
+
+function frankenSplice(arr1, arr2, n) {
+  let resArray = arr2.slice(0);
+  resArray.splice(n, 0, ...arr1);
+  return resArray;
+}
+
+frankenSplice([1, 2, 3], [4, 5, 6], 1);
+
+
+
+
+
 
 
