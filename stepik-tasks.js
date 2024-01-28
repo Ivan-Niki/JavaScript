@@ -280,3 +280,14 @@ else if (monthNumber === 9 || monthNumber === 10 || monthNumber === 11) {
     }
 }
 console.log(result);
+
+/* 18. Перед вами программа, которая должна выводить каждое четное число по порядку от 0 до заданного пользователем числа (включительно). 
+Напишите вместо многоточия правильное тело цикла. Не используйте условные конструкции. */
+
+let targetNumber = Number(prompt("Введите число, до которого нужно считать:")); 
+let currentNumber = 0;
+
+while (currentNumber <= targetNumber) {
+   console.log(currentNumber);
+   currentNumber += 2;
+}
