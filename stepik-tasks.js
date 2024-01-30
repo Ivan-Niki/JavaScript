@@ -514,3 +514,25 @@ function compareNumbers(num1, num2) {
 }
 compareNumbers(num1, num2);
 
+
+/* 37. Напишите программу, которая запрашивает у пользователя четыре числа и объявляет функцию compareAndPrintMax. 
+Эта функция принимает четыре числа как параметры и сравнивает их, затем выводит сообщение о том, какое число больше. */
+let num1 = Number(prompt("Введите первое число:"));
+let num2 = Number(prompt("Введите второе число:"));
+let num3 = Number(prompt("Введите третье число:"));
+let num4 = Number(prompt("Введите четвертое число:"));
+function compareAndPrintMax(num1, num2, num3, num4) {
+    if (num1 > num2 && num1 > num3 && num1 > num4) {
+        console.log(num1);
+    }
+    else if (num2 > num1 && num2 > num3 && num2 > num4) {
+        console.log(num2);
+    }
+    else if (num3 > num1 && num3 > num2 && num3 > num4) {
+        console.log(num3);
+    }
+    else {
+        console.log(num4);
+    }
+}
+compareAndPrintMax(num1, num2, num3, num4);
