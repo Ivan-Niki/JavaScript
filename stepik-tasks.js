@@ -658,3 +658,11 @@ function checkTriangleExistence(a, b, c) {
 
 checkTriangleExistence(side1, side2, side3);
 
+/* 43. Напишите программу, которая проверяет является ли введенное число четным, используя функциональное выражение. 
+Напишите инструкцию вызова этой функции и вывода возвращаемого функцией результата. */
+
+let a = Number(prompt());
+let isEven = function(num){
+     return num % 2 === 0;
+}
+console.log(isEven(a));
