@@ -562,3 +562,16 @@ function calculate(num1, num2, operat) {
     }
 }
 calculate(num1, num2, operat);
+
+/* 39. Напишите программу, которая запрашивает у пользователя три числа и объявляет функцию, 
+которая принимает три числа как параметры и возвращает их среднее арифметическое. 
+Выведите удвоенное значение среднего арифметического. */
+
+let num1 = Number(prompt("Введите первое число:"));
+let num2 = Number(prompt("Введите второе число:"));
+let num3 = Number(prompt("Введите третье число:"));
+function compareAndPrintMax(num1, num2, num3) {
+    return (num1 + num2 + num3)/3
+}
+let doubleMid = compareAndPrintMax(num1, num2, num3) * 2;
+console.log(doubleMid);
