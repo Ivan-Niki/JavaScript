@@ -609,3 +609,30 @@ function compareMax(max1, max2) {
 }
 compareMax(max1, max2);
 
+/* 41. Напишите программу, которая запрашивает у пользователя два набора из двух чисел и объявляет две функции: calculateAverage и compareAverages. 
+Функция calculateAverage принимает два числа как параметры и возвращает их среднее арифметическое. 
+Функция compareAverages принимает результаты средних значений из двух наборов чисел как параметры и выводит сообщение о том, какое среднее значение больше. */
+
+let num1 = Number(prompt("Введите первое число:"));
+let num2 = Number(prompt("Введите второе число:"));
+let num3 = Number(prompt("Введите третье число:"));
+let num4 = Number(prompt("Введите четвертое число:"));
+
+function calculateAverage(a, b) {
+    return(a + b)/2
+}
+let average1 = calculateAverage(num1, num2);
+let average2 = calculateAverage(num3, num4);
+
+function compareAverages(average1, average2) {
+    if (average1 > average2) {
+        console.log("Среднее значение первого набора больше");
+    }
+    else if (average2 > average1) {
+        console.log("Среднее значение второго набора больше");
+    }
+    else {
+        console.log("Средние значения наборов равны");
+    }
+}
+compareAverages(average1, average2);
