@@ -575,3 +575,37 @@ function compareAndPrintMax(num1, num2, num3) {
 }
 let doubleMid = compareAndPrintMax(num1, num2, num3) * 2;
 console.log(doubleMid);
+
+/* 40. Напишите программу, которая запрашивает у пользователя два набора из двух чисел и объявляет две функции: findMax и compareMax. 
+Функция findMax принимает два числа как параметры и возвращает большее из них. 
+Функция compareMax принимает результаты нахождения максимума из двух наборов чисел как параметры и выводит сообщение о том, какое число больше. */
+let num1 = Number(prompt("Введите первое число:"));
+let num2 = Number(prompt("Введите второе число:"));
+let num3 = Number(prompt("Введите третье число:"));
+let num4 = Number(prompt("Введите четвертое число:"));
+
+function findMax(a, b) {
+    if (a > b) {
+        return a
+    }
+    else if (b > a) {
+        return b
+    }
+}
+
+let max1 = findMax(num1, num2);
+let max2 = findMax(num3, num4);
+
+function compareMax(max1, max2) {
+    if (max1 > max2) {
+        console.log("Максимальное число первого набора больше");
+    }
+    else if (max2 > max1) {
+        console.log("Максимальное число второго набора больше");
+    }
+    else {
+        console.log("Максимальные числа наборов равны");
+    }
+}
+compareMax(max1, max2);
+
