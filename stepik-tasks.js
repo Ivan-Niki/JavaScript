@@ -621,6 +621,7 @@ let num4 = Number(prompt("Введите четвертое число:"));
 function calculateAverage(a, b) {
     return(a + b)/2
 }
+
 let average1 = calculateAverage(num1, num2);
 let average2 = calculateAverage(num3, num4);
 
