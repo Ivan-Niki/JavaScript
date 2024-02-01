@@ -668,7 +668,12 @@ let isEven = function(num){
 console.log(isEven(a));
 
 /* 44. Перепишите код из предыдущего шага, используя стрелочные функции. */
-
 let a = Number(prompt());
 let isEven = num => num % 2 === 0;
 console.log(isEven(a));
+
+/* 45. Напишите программу, которая запрашивает у пользователя число и объявляет стрелочную функцию, которая принимает число в качестве параметра и возвращает куб этого числа. */
+let num = Number(prompt());
+let thirdPower = n => n ** 3;
+console.log(thirdPower(num));
+
