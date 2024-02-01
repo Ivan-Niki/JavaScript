@@ -666,3 +666,9 @@ let isEven = function(num){
      return num % 2 === 0;
 }
 console.log(isEven(a));
+
+/* 44. Перепишите код из предыдущего шага, используя стрелочные функции. */
+
+let a = Number(prompt());
+let isEven = num => num % 2 === 0;
+console.log(isEven(a));
