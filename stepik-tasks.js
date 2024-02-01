@@ -677,3 +677,22 @@ let num = Number(prompt());
 let thirdPower = n => n ** 3;
 console.log(thirdPower(num));
 
+/* 46. Напишите программу, которая запрашивает у пользователя площадь основания S и высоту h, 
+затем позволяет выбрать для какой фигуры найти объем: для цилиндра или для конуса. 
+Затем объявляются две стрелочные функции: calculateCylinderVolume и calculateConeVolume, каждая из которых
+принимает параметры фигуры и возвращает объем.
+Объем цилиндра = площадь основания * высота
+Объем конуса = 1/3 * площадь основания * высота  */
+let s = Number(prompt("Введите площадь основания фигуры:"));
+let h = Number(prompt("Введите высоту фигуры:"));
+let figure = prompt("Введите тип фигуры (цилиндр или конус):");
+
+let calculateCylinderVolume = (s, h, figure) => s * h;
+let calculateConeVolume = (s, h, figure) => 1/3 * s * h;
+    
+if (figure == "цилиндр") {
+    console.log("Объем цилиндра: " + calculateCylinderVolume(s, h, figure));
+}
+if (figure == "конус") {
+    console.log("Объем конуса: " + calculateConeVolume(s, h, figure));
+}
