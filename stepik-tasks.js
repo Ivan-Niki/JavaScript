@@ -723,3 +723,13 @@ console.log(car.brand, car.model);
 3.	Длительность путешествия (в днях).
 Затем программа использует этот объект для вывода информации о путешествии. */
 
+let location = prompt("Введите место назначения:");
+let date = prompt("Введите дату начала путешествия:");
+let duration = prompt("Введите длительность путешествия (в днях):");
+let trip = {
+    location,
+    date,
+    duration
+};
+console.log(trip.date, "вы отправляетесь в", trip.location, "на", trip.duration, "дней");
+
