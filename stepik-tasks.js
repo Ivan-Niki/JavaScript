@@ -696,3 +696,24 @@ if (figure == "цилиндр") {
 if (figure == "конус") {
     console.log("Объем конуса: " + calculateConeVolume(s, h, figure));
 }
+
+
+/*        ==================== О Б Ъ Е К Т Ы ==================         */
+
+/* 47. Перед вами объект, в который записывается информация от пользователя об автомобиле. 
+Выведите эту информацию в соответствии с заявленным форматом. 
+Sample Input 1: 
+Audi
+A6
+Sample Output 1:
+Audi A6
+*/
+
+const brand = prompt();
+const model = prompt();
+let car = {
+  brand,
+  model,
+};
+console.log(car.brand, car.model);
+
