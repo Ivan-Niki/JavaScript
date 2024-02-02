@@ -749,3 +749,15 @@ let book = {
 console.log("Название книги:", book.title);
 console.log("Автор книги:", book.author);
 console.log("Год издания книги:", book.year);
+
+/* 50. Перед вами объект catalogue, в котором содержится свойство magazine: 5. 
+Удалите это свойство из объекта и добавьте в объект свойство newspaper с числовым значением, которое пользователь вводит самостоятельно. 
+Выведите значение свойства newspaper. */
+
+const catalogue = {
+    magazine: 5,
+}
+delete catalogue.magazine;
+catalogue.newspaper = Number(prompt("Введите количество газет"));
+console.log(catalogue.newspaper);
+
