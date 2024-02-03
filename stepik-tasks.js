@@ -808,3 +808,32 @@ const calculator = {
     }
 };
 calculator.power(Y);
+
+/* 55. Напишите программу, которая сперва запрашивает у пользователя сумму, а потом спрашивает, какую
+операцию он хочет с ней совершить: внести эту сумму на счет или снять эту сумму со счета. 
+Если сумма снятия превышает баланс, программа выводит сообщение о недостатке средств. */
+let bankAccount = {
+  balance: 500,
+
+  deposit: function(amount) {
+    console.log(bankAccount.balance + amount);
+  },
+    
+  withdraw: function(amount) {
+    if (amount > bankAccount.balance) {
+        console.log("Недостаточно средств на счете");
+    }
+    else {
+        console.log(bankAccount.balance - amount);
+    }
+  }
+};
+
+const amount = Number(prompt("Введите сумму"));
+const choice = prompt("Введите тип операции");
+if (choice === "внести") {
+    bankAccount.deposit(amount);
+} else if (choice === "снять") {
+   bankAccount.withdraw(amount);
+}
+
