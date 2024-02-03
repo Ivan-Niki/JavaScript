@@ -863,7 +863,7 @@ console.log(info);
 
 /* 58. Создайте объект budget со свойствами income (доход) и expenses (расходы), значения которых вводятся 
 пользователем и методом calculateProfit, который высчитывает прибыль по следующей формуле:
---> Прибыль = доход - расходы
+-->   Прибыль = доход - расходы
 Если прибыль положительная, программа выводит значение прибыли. 
 Если прибыль равна нулю, программа выводит сообщение о том, что пользователь отработал в ноль. 
 Если прибыль отрицательна, программа выводит насколько пользователь ушел в минус. 
@@ -887,3 +887,18 @@ const budget = {
     }
 };
 budget.calculateProfit();
+
+/* 59. Перед вами программа, которая принимает название товара, цену товара за штуку и количество товара и 
+выводит сообщение в определенном формате с помощью функции calculateTotal с тремя параметрами. 
+Напишите функцию calculateTotal. Используйте интерполяцию. */
+const itemName = prompt();
+const itemPrice = Number(prompt());
+const quantity = Number(prompt());
+
+function calculateTotal(itemName, itemPrice, quantity) {
+    let result = itemPrice * quantity;
+    return(`Вы выбрали ${quantity} товаров \"${itemName}\" по цене ${itemPrice} рублей за штуку. Итого: ${result} рублей.`);
+}
+
+const message = calculateTotal(itemName, itemPrice, quantity);
+console.log(message);
