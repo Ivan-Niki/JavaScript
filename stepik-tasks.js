@@ -869,3 +869,21 @@ console.log(info);
 Если прибыль отрицательна, программа выводит насколько пользователь ушел в минус. 
 Используйте интерполяцию. */
 
+let income = Number(prompt("Введите сумму доходов"));
+let expenses = Number(prompt("Введите сумму расходов"));
+
+const budget = {
+    income,
+    expenses,
+    calculateProfit() {
+        let profit = this.income - this.expenses;
+        if(profit > 0) {
+            console.log(`Ваша прибыль составляет ${profit} рублей`);
+        } else if(profit < 0) {
+            console.log(`Вы ушли в минус на ${profit - profit - profit} рублей`);
+        } else {
+            console.log(`Вы отработали в ноль`);
+        }
+    }
+};
+budget.calculateProfit();
