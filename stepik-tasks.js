@@ -903,7 +903,7 @@ function calculateTotal(itemName, itemPrice, quantity) {
 const message = calculateTotal(itemName, itemPrice, quantity);
 console.log(message);
 
-/*60. Перед вами та же программа, но теперь формат вывода сообщения изменен. 
+/* 60. Перед вами та же программа, но теперь формат вывода сообщения изменен. 
 Напишите функцию с одной инструкцией console.log(), в которой должны быть использованы спецсимволы. */
 const itemName = prompt();
 const itemPrice = Number(prompt());
@@ -915,3 +915,13 @@ function calculateTotal(itemName, itemPrice, quantity) {
 
 const message = calculateTotal(itemName, itemPrice, quantity);
 console.log(message);
+
+/* 61. Попросите пользователя ввести строку. Если длина строки меньше 5 символов, добавьте к строке "!" и 
+выведите результат, иначе добавьте к строке "?" и также выведите результат. */
+
+const str = prompt("Введите предложение");
+if (str.length < 5) {
+    console.log(`${str}!`);
+} else {
+    console.log(`${str}?`);
+}
