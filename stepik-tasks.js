@@ -983,3 +983,12 @@ for (let i = 0; i < str.length; i++) {
     }
 }
 console.log(`Символ "${item}" встречается ${itemCount} раз(-а)`);
+
+/* 68. Напишите программу, которая запрашивает у пользователя строку и затем выводит эту строку 
+в обратном порядке и в нижнем регистре. */
+let str = prompt("Введите слово");
+let reverseString = "";
+for (let i = str.length - 1; i >= 0; i--) {
+    reverseString = reverseString + str[i];
+}
+console.log(reverseString.toLowerCase());
