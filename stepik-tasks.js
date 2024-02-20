@@ -1042,6 +1042,11 @@ console.log(fruits);
 
 /* 74. Создайте массив users, запросите у пользователя ввод двух имен и добавьте их в массив. 
 Затем выведите обновленный массив. */
+let users = [];
+let name1 = prompt("Введите первое имя");
+let name2 = prompt("Введите второе имя");
+users.push(name1, name2);
+console.log(users);
 
 
 
