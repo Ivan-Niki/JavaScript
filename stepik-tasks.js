@@ -1048,6 +1048,14 @@ let name2 = prompt("Введите второе имя");
 users.push(name1, name2);
 console.log(users);
 
+/* 75. Создайте массив users, запросите у пользователя ввод трех имен и добавьте их в массив. 
+Затем выведите 1-й и 3-й элемент массива в заявленном формате. */
+let users = [];
+let name1 = prompt("Введите первое имя");
+let name2 = prompt("Введите второе имя");
+let name3 = prompt("Введите третье имя");
+users.push(name1, name2, name3);
+console.log(`${users[0]} и ${users[2]}`);
 
 
 
