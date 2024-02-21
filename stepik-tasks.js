@@ -1108,3 +1108,17 @@ console.log(resultArray);
 const userString = prompt("Введите строковые значения через запятую с пробелом:");
 const arr = userString.split(", ");
 console.log(arr);
+
+/* 80. Запросите у пользователя произвольные значения через запятую с пробелом. 
+Поместите их в массив и переведите в числовой тип данных. Выведите массив. */
+const userString = prompt("Введите произвольные значения через запятую с пробелом:");
+const arr1 = userString.split(", ");
+const arr2 = [];
+for (let item of arr1) {
+    if (isNaN(item)) {
+        arr2.push(item)
+    } else {
+        arr2.push(Number(item))
+    }
+}
+console.log(arr2);
