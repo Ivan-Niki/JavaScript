@@ -1153,3 +1153,10 @@ for (let i = 0; i < arr2.length; i++) {
 2.Далее, запросите у пользователя индексы элементов, которые они хотят вывести и в каком порядке через запятую.
 3.Выведите через пробел запрошенные элементы массива.
 */
+let arr1 = prompt("Введите произвольные значения").split(", ");
+let elementsArr = prompt("Введите индексы элементов для вывода:").split(", ");
+let resultArr = [];
+for (let i = 0; i < elementsArr.length; i++) {
+    resultArr.push(arr1[elementsArr[i]]);
+}
+console.log(resultArr.join(" "));
