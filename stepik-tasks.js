@@ -1180,3 +1180,11 @@ console.log(newArr);
 Если массив содержит элемент "Андорра-Ла-Велла", выведите массив со столицами, которые заканчиваются на букву "а". 
 Если не содержит - выведите массив со столицами, которые заканчиваются на букву "н".
 */
+let capitalsArr = prompt("Введите названия столиц:").split(" ");
+let resultArr = capitalsArr.filter((elem) => {
+if (capitalsArr.includes("Андорра-Ла-Велла")) {
+    return elem.endsWith("а");
+} else {
+    return elem.endsWith("н");
+}});
+console.log(resultArr);
