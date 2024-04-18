@@ -1255,4 +1255,11 @@ age >= 18 ? console.log("Доступ разрешен") : console.log("Дост
 На вход подаётся число.
 Выведите YES, если число [чётное и двузначное] или нечётное трёхзначное; 
 иначе выведите NO. */
-
+let num = Number(prompt());
+if (num % 2 == 0 && (num / 100) < 1) {
+    console.log('YES')  
+} else if (num % 2 !== 0 && (num / 100) >= 1) {
+    console.log('YES')
+} else {
+    console.log('NO')
+};
