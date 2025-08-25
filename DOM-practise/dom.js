@@ -11,9 +11,24 @@ body.appendChild(div);
 
 
 // Создать заголовок H1 "DOM Document Object Model"
-
+const header = document.createElement('h1');
+header.textContent = 'DOM Document Object Model';
+console.log(header);
 
 // Добавить H1 перед div с классом wrapper
+div.insertAdjacentElement('beforebegin', header)
 
-console.log(div);
-// 
+// Создать список <ul></ul>
+// Добавить в него 3 элемента списка с текстом "один", "два", "три"
+const ul = `
+<ul>
+    <li>один</li>
+    <li>два</li>
+    <li>три</li>
+</ul>
+`;
+
+// Поместить список внутрь элемента с классом wrapper
+div.innerHTML = ul;
+
+// =====================================================================
