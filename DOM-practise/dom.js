@@ -31,22 +31,30 @@ const ul = `
 // Поместить список внутрь элемента с классом wrapper
 div.innerHTML = ul;
 
+
 // =====================================================================
 // Создать изображение
+const img = document.createElement('img');
 
 // Добавить следующие свойства к изображению:
 // 1. Добавить атрибут source
+img.src = 'https://c1.35photo.ru/photos_temp/sizes/344/1721218_1000n.jpg'
 
 // 2. Добавить атрибут width сщ значением 240
+img.width = 240;
 
 // 3. Добавить класс super
 
+img.classList.add('Super');
 // 4. Добавить свойство alt со значением "Super Man"
+img.alt = 'Super Man';
 
-
+console.log(img);
 
 // Поместить изображение внутрь элемента с классом wrapper
+div.appendChild(img);
 
+// ================================
 // Используя HTML строку, создать DIV с классом 'pDiv' + с 2-мя параграфами
 
 // Поместить этот DIV до элемента <ul></ul>
@@ -57,4 +65,4 @@ div.innerHTML = ul;
 
 // Создать функцию generateAutoCard, которая принимает 3 аргумента: brand, color, year
 
-console.log(object);
+// console.log(object);
