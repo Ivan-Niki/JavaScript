@@ -44,8 +44,8 @@ img.src = 'https://c1.35photo.ru/photos_temp/sizes/344/1721218_1000n.jpg'
 img.width = 240;
 
 // 3. Добавить класс super
-
 img.classList.add('Super');
+
 // 4. Добавить свойство alt со значением "Super Man"
 img.alt = 'Super Man';
 
@@ -67,9 +67,37 @@ const ulList = div.querySelector('ul');
 ulList.insertAdjacentHTML('beforebegin', elemHTML);
 
 // Добавить для второго параграфа класс text
+const pDiv = document.querySelector('.pDiv');
+console.log(pDiv.children);
+pDiv.children[1].classList.add('text')
 
 // Удалить 1-й параграф
+pDiv.firstElementChild.remove();
 
 // Создать функцию generateAutoCard, которая принимает 3 аргумента: brand, color, year
 
-// console.log(object);
+// Функция должна возвращать разметку HTML:
+// <div class="autoCard">
+//   <h2>BRAND YEAR</h2>
+//   <p>Автомобиль BRAND - YEAR года. Возраст авто - YEARS лет.</p>
+// </div>
+
+// Создать новый DIV с классом autos
+
+// Создать 3 карточки авто, используя функцию generateAutoCard
+const carsList = [
+    { brand: 'Tesla', year: 2015, color: 'Красный' },
+    { brand: 'Lexus', year: 2016, color: 'Серебристый' },
+    { brand: 'Nissan', year: 2012, color: 'Черный' },
+]
+
+// Поместить эти 3 карточки внутрь DIV с классом autos
+
+// Поместить DIV c классом autos на страницу DOM - до DIV с классом wrapper
+
+// Добавить кнопку Удалить на каждую карточку авто
+
+// При клике на кнопку - удалять карточку из структуры DOM
+// 1. Выбрать все кнопки
+// 2. Создать функцию удаления
+// 3. Использовать цикл - чтобы повесить обработчик события на каждую кнопку
