@@ -73,8 +73,17 @@ pDiv.children[1].classList.add('text')
 
 // Удалить 1-й параграф
 pDiv.firstElementChild.remove();
+pDiv.first
 
 // Создать функцию generateAutoCard, которая принимает 3 аргумента: brand, color, year
+consr generateAutoCard = (brand, color, year) => {
+    return `
+    <div class="autoCard">
+        <h2>BRAND YEAR</h2>
+        <p>Автомобиль BRAND - YEAR года. Возраст авто - YEARS лет.</p>
+    </div>
+`;
+}
 
 // Функция должна возвращать разметку HTML:
 // <div class="autoCard">
