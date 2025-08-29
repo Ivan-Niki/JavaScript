@@ -92,6 +92,8 @@ consr generateAutoCard = (brand, color, year) => {
 // </div>
 
 // Создать новый DIV с классом autos
+const carsDiv = document.createElement('div');
+carsDiv.classList.add('autos');
 
 // Создать 3 карточки авто, используя функцию generateAutoCard
 const carsList = [
