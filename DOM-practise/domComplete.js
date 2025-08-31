@@ -73,7 +73,6 @@ pDiv.children[1].classList.add('text')
 
 // Удалить 1-й параграф
 pDiv.firstElementChild.remove();
-pDiv.first
 
 // Создать функцию generateAutoCard, которая принимает 3 аргумента: brand, color, year
 const generateAutoCard = (brand, color, year) => {
@@ -106,7 +105,7 @@ const carsList = [
 
 const carsHTML = carsList.map(car => {
     return generateAutoCard(car.brand, car.color, car.year)
-}).join('')
+}).join('');
 
 
 console.log(carsDiv);
@@ -115,13 +114,11 @@ console.log(carsHTML);
 // Поместить эти 3 карточки внутрь DIV с классом autos
 carsDiv.innerHTML = carsHTML
 
-
-
-
-
-
-
 // Поместить DIV c классом autos на страницу DOM - до DIV с классом wrapper
+div.insertAdjacentElement('beforebegin', carsDiv)
+
+
+
 
 // Добавить кнопку Удалить на каждую карточку авто
 
