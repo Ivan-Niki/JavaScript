@@ -76,7 +76,7 @@ pDiv.firstElementChild.remove();
 pDiv.first
 
 // Создать функцию generateAutoCard, которая принимает 3 аргумента: brand, color, year
-consr generateAutoCard = (brand, color, year) => {
+const generateAutoCard = (brand, color, year) => {
     return `
     <div class="autoCard">
         <h2>BRAND YEAR</h2>
@@ -95,6 +95,8 @@ consr generateAutoCard = (brand, color, year) => {
 const carsDiv = document.createElement('div');
 carsDiv.classList.add('autos');
 
+
+
 // Создать 3 карточки авто, используя функцию generateAutoCard
 const carsList = [
     { brand: 'Tesla', year: 2015, color: 'Красный' },
@@ -102,7 +104,22 @@ const carsList = [
     { brand: 'Nissan', year: 2012, color: 'Черный' },
 ]
 
+const carsHTML = carsList.map(car => {
+    return generateAutoCard(car.brand, car.color, car.year)
+}).join('')
+
+
+console.log(carsDiv);
+console.log(carsHTML);
+
 // Поместить эти 3 карточки внутрь DIV с классом autos
+carsDiv.innerHTML = carsHTML
+
+
+
+
+
+
 
 // Поместить DIV c классом autos на страницу DOM - до DIV с классом wrapper
 
