@@ -44,7 +44,7 @@ img.src = 'https://c1.35photo.ru/photos_temp/sizes/344/1721218_1000n.jpg'
 img.width = 240;
 
 // 3. Добавить класс super
-img.classList.add('Super');
+img.classList.add('super');
 
 // 4. Добавить свойство alt со значением "Super Man"
 img.alt = 'Super Man';
@@ -98,9 +98,9 @@ carsDiv.classList.add('autos');
 
 // Создать 3 карточки авто, используя функцию generateAutoCard
 const carsList = [
-    { brand: 'Tesla', year: 2015, color: 'Красный' },
-    { brand: 'Lexus', year: 2016, color: 'Серебристый' },
-    { brand: 'Nissan', year: 2012, color: 'Черный' },
+    { brand: 'Tesla', year: 2015, color: 'red' },
+    { brand: 'Lexus', year: 2016, color: 'silver' },
+    { brand: 'Nissan', year: 2012, color: 'black' },
 ]
 
 const carsHTML = carsList.map(car => {
@@ -112,10 +112,10 @@ console.log(carsDiv);
 console.log(carsHTML);
 
 // Поместить эти 3 карточки внутрь DIV с классом autos
-carsDiv.innerHTML = carsHTML
+carsDiv.innerHTML = carsHTML;
 
 // Поместить DIV c классом autos на страницу DOM - до DIV с классом wrapper
-div.insertAdjacentElement('beforebegin', carsDiv)
+div.insertAdjacentElement('beforebegin', carsDiv);
 
 
 
