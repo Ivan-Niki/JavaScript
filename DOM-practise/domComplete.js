@@ -78,8 +78,9 @@ pDiv.firstElementChild.remove();
 const generateAutoCard = (brand, color, year) => {
     return `
     <div class="autoCard">
-        <h2>BRAND YEAR</h2>
-        <p>Автомобиль BRAND - YEAR года. Возраст авто - YEARS лет.</p>
+        <h2>${brand.toUpperCase()} ${year}</h2>
+        <p>Автомобиль ${brand.toUpperCase()} - ${year} года. Возраст авто - YEARS лет.</p>
+        <p>Цвет: ${color}</p>
     </div>
 `;
 }
@@ -117,10 +118,9 @@ carsDiv.innerHTML = carsHTML;
 // Поместить DIV c классом autos на страницу DOM - до DIV с классом wrapper
 div.insertAdjacentElement('beforebegin', carsDiv);
 
-
-
-
 // Добавить кнопку Удалить на каждую карточку авто
+
+
 
 // При клике на кнопку - удалять карточку из структуры DOM
 // 1. Выбрать все кнопки
