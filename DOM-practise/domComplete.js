@@ -81,6 +81,7 @@ const generateAutoCard = (brand, color, year) => {
         <h2>${brand.toUpperCase()} ${year}</h2>
         <p>Автомобиль ${brand.toUpperCase()} - ${year} года. Возраст авто - YEARS лет.</p>
         <p>Цвет: ${color}</p>
+        <button type="button" class="btn">Удалить</button>
     </div>
 `;
 }
